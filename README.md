@@ -7,3 +7,8 @@ document.getElementById('signout-button').addEventListener('click', event => {
     userSession.signUserOut()
     window.location = window.location.origin
   })
+## 2) Authentication processed at client side.
+
+JSON web tokens passed through URL query strings, Application communicates with authRequest and  user processes authResponse. Vice versa through redirectToSignIn() when user chooses to sign in.
+
+An instance specific, Ephemeral transit key is used to generate token (authRequest here) and public part of the key is used to encrypt a private key for authResponse.
