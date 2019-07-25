@@ -11,4 +11,4 @@ document.getElementById('signout-button').addEventListener('click', event => {
 
 JSON web tokens passed through URL query strings, application communicates with authRequest and  user processes authResponse. Vice versa through redirectToSignIn() when user chooses to sign in.
 
-An instance specific, ephemeral transit key is used to generate token (authRequest here) and public part of the key is used to encrypt a private key for authResponse.
+an instance specific, ephemeral transit key is used to generate token (authRequest here) and public part of the key is used to encrypt a private key for authResponse.
